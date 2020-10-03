@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="vendor/bootstrap/css/bootstrap.min.css"
+    />
+    <!--===============================================================================================-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!--===============================================================================================-->
+    <style>
+      #note {
+        display: flex;
+      }
+      #loading,
+      #results {
+        display: none;
+      }
+    </style>
+    <title>AU GPA CALCULATOR</title>
+  </head>
+  <body class="bg-dark">
+    <p style="color: aliceblue;text-align:end;vertical-align: bottom">
+      DONE BY P SIVA KRISHNA REDDY
+    </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card card-body text-center mt-2">
+            <h1 class="heading display-5 pb-3">AU GPA CALCULATOR</h1>
+            <!---NOTE-->
+            <div id="note">
+              <p
+                class="mx-auto"
+                style="font-family:monospace;font-size: 15px;border-left:2px solid black ;border-right:2px solid black"
+                ;
+              >
+                SET 0 FOR GP AND CREDIT IF NO SUBJECT AVAILABLE!
+              </p>
+            </div>
+            <form id="gpa-form">
+              <ol class="collection">
+                <li class="collection-item">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-addon">GP</span>
+                      <input
+                        type="number"
+                        max="10"
+                        min="0"
+                        class="form-control"
+                        id="SUB1"
+                        placeholder="SUB1 GP"
+                        required
+                      />
+                      <span class="input-group-addon">CREDITS</span>
+                      <input
+                        type="number"
+                        max="5"
+                        min="0"
+                        class="form-control"
+                        id="CREDITS1"
+                        placeholder="CREDITS"
+                        required
+                      />
+                    </div>
+                  </div>
+                </li>
+                <!-----subject 2------>
+                <li class="collection-item">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-addon">GP</span>
+                      <input
+                        type="number"
+                        max="10"
+                        min="0"
+                        class="form-control"
+                        id="SUB2"
+                        placeholder="SUB2 GP"
+                        required
+                      />
+                      <span class="input-group-addon">CREDITS</span>
+                      <input
+                        type="number"
+                        max="5"
+                        min="0"
+                        class="form-control"
+                        id="CREDITS2"
+                        placeholder="CREDITS"
+                        required
+                      />
+                    </div>
+                  </div>
+                </li>
+                <!----subject3------>
+                <li class="collection-item">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-addon">GP</span>
+                      <input
+                        type="number"
+                        max="10"
+                        min="0"
+                        class="form-control"
+                        id="SUB3"
+                        placeholder="SUB3 GP"
+                        required
+                      />
+                      <span class="input-group-addon">CREDITS</span>
+                      <input
+                        type="number"
+                        max="5"
+                        min="0"
+                        class="form-control"
+                        id="CREDITS3"
+                        placeholder="CREDITS"
+                        required
+                      />
+                    </div>
+                  </div>
+                </li>
+                <!----subject4------>
+                <li class="collection-item">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-addon">GP</span>
+                      <input
+                        type="number"
+                        max="10"
+                        min="0"
+                        class="form-control"
+                        id="SUB4"
+                        placeholder="SUB4 GP"
+                        required
+                      />
+                      <span class="input-group-addon">CREDITS</span>
+                      <input
+                        type="number"
+                        max="5"
+                        min="0"
+                        class="form-control"
+                        id="CREDITS4"
+                        placeholder="CREDITS"
+                        required
+                      />
+                    </div>
+                  </div>
+                </li>
+                <!----subject5------>
+                <li class="collection-item">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-addon">GP</span>
+                      <input
+                        type="number"
+                        max="10"
+                        min="0"
+                        class="form-control"
+                        id="SUB5"
+                        placeholder="SUB5 GP"
+                        required
+                      />
+                      <span class="input-group-addon">CREDITS</span>
+                      <input
+                        type="number"
+                        max="5"
+                        min="0"
+                        class="form-control"
+                        id="CREDITS5"
+                        placeholder="CREDITS"
+                        required
+                      />
+                    </div>
+                  </div>
+                </li>
+                <!----subject6------>
+                <li class="collection-item">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-addon">GP</span>
+                      <input
+                        type="number"
+                        max="10"
+                        min="0"
+                        class="form-control"
+                        id="SUB6"
+                        placeholder="SUB6 GP"
+                        required
+                      />
+                      <span class="input-group-addon">CREDITS</span>
+                      <input
+                        type="number"
+                        max="5"
+                        min="0"
+                        class="form-control"
+                        id="CREDITS6"
+                        placeholder="CREDITS"
+                        required
+                      />
+                    </div>
+                  </div>
+                </li>
+                <h6>PRACTICALS</h6>
+                <!----PRACTICAL 1------>
+                <li class="collection-item">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-addon">GP</span>
+                      <input
+                        type="number"
+                        max="10"
+                        min="0"
+                        class="form-control"
+                        id="SUB7"
+                        placeholder="PRACTICAL SUB1 GP"
+                        required
+                      />
+                      <span class="input-group-addon">CREDITS</span>
+                      <input
+                        type="number"
+                        max="5"
+                        min="0"
+                        class="form-control"
+                        id="CREDITS7"
+                        placeholder="CREDITS"
+                        required
+                      />
+                    </div>
+                  </div>
+                </li>
+                <!----PRACTICAL 2------>
+                <li class="collection-item">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-addon">GP</span>
+                      <input
+                        type="number"
+                        max="10"
+                        min="0"
+                        class="form-control"
+                        id="SUB8"
+                        placeholder="PRACTICAL SUB2 GP"
+                        required
+                      />
+                      <span class="input-group-addon">CREDITS</span>
+                      <input
+                        type="number"
+                        max="5"
+                        min="0"
+                        class="form-control"
+                        id="CREDITS8"
+                        placeholder="CREDITS"
+                        required
+                      />
+                    </div>
+                  </div>
+                </li>
+                <!----PRACTICAL 3------>
+                <li class="collection-item">
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-addon">GP</span>
+                      <input
+                        type="number"
+                        max="10"
+                        min="0"
+                        class="form-control"
+                        id="SUB9"
+                        placeholder="PRACTICAL SUB3 GP"
+                        required
+                      />
+                      <span class="input-group-addon">CREDITS</span>
+                      <input
+                        type="number"
+                        max="5"
+                        min="0"
+                        class="form-control"
+                        id="CREDITS9"
+                        placeholder="CREDITS"
+                        required
+                      />
+                    </div>
+                  </div>
+                </li>
+              </ol>
+<!---LOADER-->
+            <div id="loading" name="load">
+              <img src="img/loading.gif" alt="" height="60px" width="60px" />
+            </div>
+              <div class="form-group">
+                <input
+                  type="submit"
+                  value="Calculate"
+                  class="btn btn-dark btn-block"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  type="reset"
+                  value="Clear"
+				  id="r"
+                  class="btn btn-dark btn-block"
+                />
+              </div>
+            </form>
+            
+
+            <!----RESULTS-->
+            <div id="results" class="pt-4">
+              <h5>Results</h5>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon">GPA</span>
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="GradePoints"
+                    disabled
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+
+    <!--===============================================================================================-->
+    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/bootstrap/js/popper.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/daterangepicker/moment.min.js"></script>
+    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <!--===============================================================================================-->
+    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <!--===============================================================================================-->
+  </body>
+</html>
